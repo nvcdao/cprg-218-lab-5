@@ -5,54 +5,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="fonts.css">
-  <link rel="stylesheet" type="text/css" href="global.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>API</title>
+  <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+  <link rel="stylesheet" type="text/css" href="CSS/fonts.css">
+  <link rel="stylesheet" type="text/css" href="CSS/global.css">
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+  <title>Studio Ghibli</title>
 </head>
 
 <body>
+  <script src="Javascript/dropdownapi.js" defer></script>
+  <script src="Javascript/scripts.js" defer></script>
   <!-- Heading for the Page -->
   <header class="header-container">
-    <h1>Lab 5</h1>
-    <h2>App displaying card content using API</h2>
+    <h1 class="studio-ghibli">Studio Ghibli</h1>
   </header>
-  <section class="option-1">
+  <section class="Ghibli Dropdown">
     <div class="option-container">
-      <h2>Option 1</h2>
-      <p>Use a dropdown to change the API endpoint or data</p>
+      <h2>Ghibili Location</h2>
+      <p>Find out the Climate and Terrain using the dropdown!</p>
       <select id="dropdown" class="dropdown"></select>
       <button id="submit-button" class="button">Submit</button>
     </div>
-    <div class="container">
       <ul id="option-1-results" class="card-container"></ul>
     </div>
   </section>
-  <section class="option-2">
+  <section class="Ghibli Search">
     <div class="option-container">
-      <h2>Option 2</h2>
-      <p>Display a list of cards using the API</p>
-    </div>
-    <div class="container">
-      <ul id="option-2-results" class="card-container"></ul>
-    </div>
-  </section>
-  <section class="option-2-enhanced">
-    <div class="option-container">
-      <h2>Option 2 Enhanced</h2>
-      <p>Add a search box to filter the list of cards.</p>
+      <h2>Ghibli Movie List</h2>
+      <p>Search for a movie</p>
       <!--Search box to find content on cards-->
-      <div class="box" style="text-align: center;">
-        <input id="searchbar" class="search" type="text" name="search" placeholder="Search..">
+      <div id="root">
+        <input id="searchbar" type="text" name="search" placeholder="Search..">
       </div>
-    </div>
-    <div class="container">
-      <!--Display cards-->
-      <ul id="option-2-enhanced-results" class="card-container"></ul>
-    </div>
   </section>
-  <script src="scripts.js" defer></script>
 </body>
 
 </html>
