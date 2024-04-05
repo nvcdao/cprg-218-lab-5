@@ -17,10 +17,21 @@ html {
 }
 
 #searchbar {
-  width: 700px;
+  width: 300px;
   height: 40px;
   border-radius: 5px;
 
+}
+
+.button {
+  width: 70px;
+  height: 40px;
+}
+
+.dropdown {
+  width: 200px;
+  height: 40px;
+  margin-bottom: 1rem;
 }
 
 h1 {
